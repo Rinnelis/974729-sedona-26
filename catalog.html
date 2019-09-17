@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title class="visually-hidden">Седона</title>
   </head>
 
   <body>
@@ -22,10 +22,58 @@
     </header>
 
     <main>
-      <!-- Форма выбора гостиницы -->
+      <section>
+      <h1>Выбор гостиницы</h1>
+      <form action="#" method="get"
+      oninput="priceoutput.value=day-price.value">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartment" id="apartment" checked>
+              <label for="apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <div>
+              <output name="priceoutput"></output>
+              <input type="range" id="day-price" name="day-price" min="0"
+              max="3500" step="500">
+          </div>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
 
       <section>
-        <h1>Гостиницы</h1>
+        <h2 class="visually-hidden">Гостиницы</h2>
           <ul>
             <li>
               <img src="img/amara.jpg" width="135" height="90" alt="Amara">

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title class="visually-hidden">Седона</title>
   </head>
 
   <body>
@@ -23,17 +23,17 @@
 
     <main>
 
-      <h1>Седона</h1>
+      <h1 class="visually-hidden">Седона</h1>
 
       <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
 
       <div>
-        <h2>Причины посещения</h2>
+        <h2 class="visually-hidden">Причины посещения</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
 
       <section>
-        <h2>Причины посетить Седону</h2>
+        <h2 class="visually-hidden">Причины посетить Седону</h2>
         <ul>
           <li>
             <h3>Настоящий городок</h3>
@@ -97,7 +97,29 @@
 
       <section>
         <a href="#"><h2>Поиск гостиницы в Седоне</h2></a>
-        <!-- Форма поиска + карта -->
+        <form action="#" method="get">
+          <p><label for="check-in-date">Дата заезда</label>
+            <input id="check-in-date" type="text" name="check-in-date" value=""
+            placeholder="24 апреля 2017"><button type="button"><img
+              src="img/calendar.svg" width="21" height="22" alt="Календарь">
+            </button>
+          </p>
+          <p><label for="check-out-date">Дата выезда</label>
+            <input id="check-out-date" type="text" name="check-out-date"
+            value="" placeholder="4 июля 2017"><button type="button">
+              <img src="img/calendar.svg" width="21" height="22"
+              alt="Календарь"></button>
+          </p>
+          <p><label for="adults">Взрослые</label>
+            <input id="adults" type="text" name="adults" value=""
+            placeholder="2">
+          </p>
+          <p><label for="children">Дети</label>
+            <input id="children" type="text" name="children" value=""
+            placeholder="0">
+          </p>
+        </form>
+        <button action="#" type="submit">Найти</button>
         <img src="img/map.png" width="1200" height="595"
         alt="Карта местонахождения Седоны">
       </section>
