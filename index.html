@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title class="visually-hidden">Седона</title>
+    <title>Седона</title>
   </head>
 
   <body>
@@ -96,30 +96,37 @@
       </section>
 
       <section>
-        <a href="#"><h2>Поиск гостиницы в Седоне</h2></a>
+        <a href="https://echo.htmlacademy.ru">
+          <h2>Поиск гостиницы в Седоне</h2></a>
         <form action="#" method="get">
-          <p><label for="check-in-date">Дата заезда</label>
+          <p>
+            <label for="check-in-date">Дата заезда</label>
             <input id="check-in-date" type="text" name="check-in-date" value=""
-            placeholder="24 апреля 2017"><button type="button"><img
-              src="img/calendar.svg" width="21" height="22" alt="Календарь">
-            </button>
-          </p>
-          <p><label for="check-out-date">Дата выезда</label>
-            <input id="check-out-date" type="text" name="check-out-date"
-            value="" placeholder="4 июля 2017"><button type="button">
+            placeholder="24 апреля 2017">
+            <button type="button">
               <img src="img/calendar.svg" width="21" height="22"
               alt="Календарь"></button>
           </p>
-          <p><label for="adults">Взрослые</label>
-            <input id="adults" type="text" name="adults" value=""
+          <p>
+            <label for="check-out-date">Дата выезда</label>
+            <input id="check-out-date" type="text" name="check-out-date"
+            value="" placeholder="4 июля 2017">
+            <button type="button">
+            <img src="img/calendar.svg" width="21" height="22"
+            alt="Календарь"></button>
+          </p>
+          <p>
+            <label for="adults">Взрослые</label>
+            <input id="adults" type="number" name="adults" value=""
             placeholder="2">
           </p>
-          <p><label for="children">Дети</label>
-            <input id="children" type="text" name="children" value=""
+          <p>
+            <label for="children">Дети</label>
+            <input id="children" type="number" name="children" value=""
             placeholder="0">
           </p>
+        <button type="submit">Найти</button>
         </form>
-        <button action="#" type="submit">Найти</button>
         <img src="img/map.png" width="1200" height="595"
         alt="Карта местонахождения Седоны">
       </section>

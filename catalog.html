@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title class="visually-hidden">Седона</title>
+    <title>Седона</title>
   </head>
 
   <body>
@@ -24,8 +24,7 @@
     <main>
       <section>
       <h1>Выбор гостиницы</h1>
-      <form action="#" method="get"
-      oninput="priceoutput.value=day-price.value">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -62,10 +61,10 @@
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <div>
-              <output name="priceoutput"></output>
-              <input type="range" id="day-price" name="day-price" min="0"
-              max="3500" step="500">
+          <div class="range">
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
         </fieldset>
         <button type="submit">Показать</button>
