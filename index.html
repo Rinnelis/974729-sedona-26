@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="#">
-          <img src="img/welcome.svg" width="459" height="353"
-          alt="Логотип Седона">
-        </a>
-        <ul>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -21,21 +20,24 @@
       </nav>
     </header>
 
-    <main>
-
+    <main class="container">
+      <div class="background">
+        <a class="main-header-logo" href="#">
+          <img src="img/welcome.svg" width="459" height="353"
+          alt="Логотип Седона">
+        </a>
+      </div>
       <h1 class="visually-hidden">Седона</h1>
-
       <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-
       <div>
         <h2 class="visually-hidden">Причины посещения</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
 
-      <section>
+      <section class="reasons">
         <h2 class="visually-hidden">Причины посетить Седону</h2>
-        <ul>
-          <li>
+        <ul class="reasons-list">
+          <li class="reason-item reason-blue">
             <h3>Настоящий городок</h3>
             <p>- №1 -</p>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
@@ -43,24 +45,24 @@
             alt="1 причина">
           </li>
 
-          <li>
+          <li class="reason-item">
             <ul>
-              <li>
+              <li class="reason-item">
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li>
+              <li class="reason-item">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li>
+              <li class="reason-item">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
 
-          <li>
+          <li class="reason-item reason-blue">
             <img src="img/reason-2.jpg" width="800" height="255"
             alt="2 причина">
             <h3>Там есть<br>
@@ -69,19 +71,19 @@
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
 
-          <li>
+          <li class="reason-item reason-grey">
             <h3>Небольшая площадь</h3>
             <p>- №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
 
-          <li>
+          <li class="reason-item reason-grey">
             <h3>Красивая дорога</h3>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
-          <li>
+          <li class="reason-item reason-grey">
             <h3>Мало туристов</h3>
             <p>- №5 -</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -89,13 +91,13 @@
         </ul>
       </section>
 
-      <section>
+      <section class="interest">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
       </section>
 
-      <section>
+      <section class="hotel-search">
         <a href="https://echo.htmlacademy.ru">
           <h2>Поиск гостиницы в Седоне</h2></a>
         <form action="#" method="get">
@@ -135,15 +137,15 @@
     <footer>
       <p>#visitsedona</p>
 
-      <div>
+      <div class="footer-social">
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Ютуб</a></li>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Ютуб</a></li>
         </ul>
       </div>
 
-      <p>Website by
+      <p class="footer-copyright">Website by
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-html.svg" width="115" height="40"
         alt="Логотип разработчика">
