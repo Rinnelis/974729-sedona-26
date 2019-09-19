@@ -42,14 +42,15 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden + p {
-  text-align: center;
-}
-
-h1.visually-hidden + p {
+.sedona-description {
   font-size: 21px;
   color: #000000;
   font-weight: bold;
+  text-align: center;
+}
+
+.cool-reasons {
+  text-align: center;
 }
 
 .main-navigation {
@@ -66,7 +67,8 @@ h1.visually-hidden + p {
 }
 
 .reasons-list,
-.reason-item {
+.reason-item,
+.reason-item-inner {
   list-style: none;
 }
 
@@ -117,11 +119,11 @@ h1.visually-hidden + p {
   color: #000000;
 }
 
-.hotel-search a:hover h2 {
+.search-title:hover h2 {
   background-color: #604E43;
 }
 
-.hotel-search a:active h2 {
+.search-title:active h2 {
   background-color: #503E33;
   color: #857871;
 }
@@ -141,11 +143,11 @@ h1.visually-hidden + p {
   color: #94B9D2;
 }
 
-footer {
+.main-footer {
   background-color: rgba(255, 255, 255, 0.9)
 }
 
-footer p:first-child {
+.main-footer p:first-child {
   font-size: 21px;
   font-weight: bold;
   color: #000000;
@@ -204,16 +206,16 @@ footer p:first-child {
   list-style: none;
 }
 
-.hotel-item h2 a {
+a.hotel-name {
   color: #000000;
   font-weight: 21px;
 }
 
-.hotel-item h2 a:hover {
+a.hotel-name:hover {
   color: #669EC0;
 }
 
-.hotel-item h2 a:active {
+a.hotel-name:active {
   color: #CACACA;
 }
 
