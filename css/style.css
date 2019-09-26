@@ -141,7 +141,6 @@ a {
   width: 400px;
   text-align: center;
   line-height: 21px;
-  color: #000000;
 }
 
 .reason-item h3,
@@ -162,7 +161,7 @@ a {
   width: 400px;
 }
 
-.interest h2 {
+.hotel-search h2 {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -171,26 +170,22 @@ a {
   text-align: center;
 }
 
-.interest p {
+.hotel-search p {
   line-height: 24px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 55px;
 }
 
-.hotel-search {
-  width: 568px;
+.hotel-search h2 {
+  text-align: center;
+  color: #000000;
 }
 
-.hotel-search h2 {
+.search-title h2 {
   text-align: center;
   color: #ffffff;
   background-color: #766357;
-}
-
-.hotel-search p {
-  font-weight: bold;
-  color: #000000;
 }
 
 .search-title:hover h2 {
@@ -200,6 +195,10 @@ a {
 .search-title:active h2 {
   background-color: #503E33;
   color: #857871;
+}
+
+.hotel-search form {
+  display: none;
 }
 
 .hotel-search button[type="submit"] {
