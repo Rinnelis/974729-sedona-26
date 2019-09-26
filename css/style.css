@@ -23,11 +23,27 @@ body {
   overflow: hidden;
 }
 
-.background {
-  background-image: url(../img/background-photo.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  text-align: center;
+.main-header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.main-navigation {
+  color: #000000;
+}
+
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.site-navigation a {
+  color: #000000;
+  font-weight: bold;
 }
 
 .site-navigation a:hover {
@@ -42,28 +58,56 @@ a {
   text-decoration: none;
 }
 
+.background {
+  display: flex;
+  background-image: url(../img/background-photo.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.background img {
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+
+.description-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .sedona-description {
+  text-align: center;
   font-size: 21px;
   color: #000000;
   font-weight: bold;
-  text-align: center;
+  width: 445px;
+  margin: 0;
+  padding: 0;
+  margin-top: 65px;
 }
 
 .cool-reasons {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.main-navigation {
-  color: #000000;
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
-.site-navigation {
-  list-style: none;
-}
-
-.site-navigation a {
-  color: #000000;
-  font-weight: bold;
+.inner-reasons-list {
+  display: flex;
 }
 
 .reasons-list,
@@ -73,11 +117,23 @@ a {
 }
 
 .reason-item {
+  width: 400px;
   text-align: center;
   line-height: 21px;
+  padding-bottom: 42px;
+  padding-top: 38px;
 }
 
-.reason-item h3 {
+.reason-item-inner {
+  margin-bottom: 90px;
+  width: 400px;
+  text-align: center;
+  line-height: 21px;
+  color: #000000;
+}
+
+.reason-item h3,
+.reason-item-inner h3 {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -95,17 +151,28 @@ a {
 }
 
 .interest {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .interest h2 {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .interest p {
   line-height: 24px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
+.hotel-search {
+  width: 568px;
 }
 
 .hotel-search h2 {
@@ -144,13 +211,19 @@ a {
 }
 
 .main-footer {
-  background-color: rgba(255, 255, 255, 0.9)
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 50px 0;
+  color: #000000;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .main-footer p:first-child {
   font-size: 21px;
   font-weight: bold;
-  color: #000000;
 }
 
 .footer-social {
@@ -175,12 +248,15 @@ a {
   color: #766357;
 }
 
-.hotel-choosing {
+.hotel-wrapper {
+  display: flex;
   background-image: url(../img/filter-background.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #81B3D2;
+  width: 1200px;
+  padding: 30px 70px;
 }
 
 .hotel-choosing ul {
@@ -189,11 +265,18 @@ a {
 
 .hotel-choosing button {
   background-color: transparent;
+  color: #ffffff;
 }
 
 .hotel-choosing button:hover {
   background-color: #ffffff;
   color: #000000;
+}
+
+.hotel-filter {
+  width: 200px;
+  margin-bottom: 35px;
+  margin-right: 60px;
 }
 
 .hotel-filter h2 {
@@ -202,8 +285,28 @@ a {
   font-weight: bold;
 }
 
-.founded-hotels ul {
+.hotels-list {
+  display: flex;
   list-style: none;
+  flex-wrap: wrap;
+}
+
+.hotel-item {
+  display: flex;
+  margin-left: 75px;
+  margin-right: 75px;
+  width: 1050px;
+  justify-content: space-between;
+}
+
+.left-column {
+  display: flex;
+  width: 425px;
+  justify-content: space-between;
+}
+
+.right-column {
+  width: 125px;
 }
 
 a.hotel-name {
@@ -226,6 +329,7 @@ a.hotel-name:active {
 .more {
   background-color: #81B3D2;
   color: #ffffff;
+  width: 110px;
 }
 
 a.more:hover {
@@ -240,6 +344,7 @@ a.more:active {
 .book {
   background-color: #766357;
   color: #ffffff;
+  width: 142px;
 }
 
 a.book:hover {
@@ -253,4 +358,5 @@ a.book:active {
 
 .rate {
   background-color: #F2F2F2;
+  width: 110px;
 }

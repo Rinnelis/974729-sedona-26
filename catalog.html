@@ -24,6 +24,7 @@
       <section class="hotel-choosing">
       <h1 class="visually-hidden">Выбор гостиницы</h1>
       <form action="https://echo.htmlacademy.ru" method="get">
+          <div class="hotel-wrapper">
         <section class="hotel-filter">
           <h2>Инфраструктура:</h2>
           <ul>
@@ -41,6 +42,7 @@
             </li>
           </ul>
         </section>
+
         <section class="hotel-filter">
           <h2>Тип жилья:</h2>
           <ul>
@@ -58,6 +60,7 @@
             </li>
           </ul>
         </section>
+
         <section class="hotel-filter">
           <h2>Стоимость в сутки (Р):</h2>
           <div class="range">
@@ -67,6 +70,7 @@
           </div>
         </section>
         <button type="submit">Показать</button>
+          </div>
       </form>
     </section>
 
@@ -74,16 +78,18 @@
         <h2 class="visually-hidden">Гостиницы</h2>
           <ul class="hotels-list">
             <li class="hotel-item">
-              <img src="img/amara.jpg" width="135" height="90" alt="Amara">
-              <div>
+              <div class="left-column">
+                <img src="img/amara.jpg" width="135" height="90" alt="Amara">
+                <div>
                 <h2><a class="hotel-name" href="#">Amara Resort & Spa</a></h2>
                 <p>Гостиница от 4000 руб.</p>
                 <div>
                 <a class="more" href="#">Подробнее</a>
                 <a class="book" href="#">Забронировать</a>
                 </div>
+                </div>
               </div>
-              <div>
+              <div class="right-column">
                 <div>
                   <!-- Звездочки -->
                 </div>
@@ -92,8 +98,9 @@
             </li>
 
             <li  class="hotel-item">
-              <img src="img/desert.jpg" width="135" height="90" alt="Desert">
-              <div>
+              <div class="left-column">
+                <img src="img/desert.jpg" width="135" height="90" alt="Desert">
+                <div>
                 <h2><a class="hotel-name" href="#">Desert Quail Inn</a></h2>
                 <p>Мотель от 3000 руб.</p>
                 <div>
@@ -101,7 +108,8 @@
                 <a class="book" href="#">Забронировать</a>
                 </div>
               </div>
-              <div>
+            </div>
+              <div class="right-column">
                 <div>
                   <!-- Звездочки -->
                 </div>
@@ -110,6 +118,7 @@
             </li>
 
             <li  class="hotel-item">
+              <div class="left-column">
               <img src="img/villas.jpg" width="135" height="90" alt="Villas">
               <div>
                 <h2><a class="hotel-name" href="#">Villas at Poco Diablo</a></h2>
@@ -119,7 +128,8 @@
                 <a class="book" href="#">Забронировать</a>
                 </div>
               </div>
-              <div>
+            </div>
+              <div class="right-column">
                 <div>
                   <!-- Звездочки -->
                 </div>
@@ -131,6 +141,7 @@
       </main>
 
       <footer class="main-footer">
+        <div class="footer-container">
         <p>#visitsedona</p>
 
         <div class="footer-social">
@@ -147,6 +158,7 @@
           alt="Логотип разработчика">
         </a>
         </p>
+      </div>
       </footer>
 
   </body>
