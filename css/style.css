@@ -1,14 +1,19 @@
+html {
+  background: #f2f2f2;
+}
+
 body {
   margin: 0;
   padding: 0;
-
+  width: 1200px;
+  margin: 0 auto;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #A9A9A9;
   text-transform: uppercase;
-
+  box-shadow: 0 0 20px 0 #dbdbdb;
   background-color: #ffffff;
 }
 
@@ -284,9 +289,54 @@ a {
   text-transform: uppercase;
 }
 
-.adults input,
-.children input {
-  width: 115px;
+.count {
+  display: flex;
+  justify-content: space-between;
+}
+
+.minus,
+.plus {
+  font-size: 30px;
+  color: #a9a9a9;
+}
+
+.people {
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
+}
+
+.adults,
+.children {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.adults button,
+.children button {
+  border: none;
+  background: #f2f2f2;
+
+}
+
+.adults label {
+  margin-right: 40px;
+  padding-top: 5px;
+}
+
+.children label {
+  padding-top: 5px;
+}
+
+.count input,
+.count input {
+  width: 38px;
+  background-color: #f2f2f2;
+  border: 0;
+  box-sizing: border-box;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .search-item input:hover {
@@ -318,7 +368,6 @@ a {
   line-height: 36px;
   color: #000000;
   margin-top: 60px;
-  margin-bottom: 40px;
 }
 
 .hotel-search p {
@@ -331,6 +380,8 @@ a {
   color: #ffffff;
   background-color: #766357;
   padding: 20px 0;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .search-title:hover h2 {
@@ -439,8 +490,12 @@ a {
   margin-right: 5px;
 }
 
-.logo-html path {
-  fill: black;
+.logo-html:hover path {
+  fill: #81b3d2;
+}
+
+.logo-html:active path {
+  fill: #bdbbbc;
 }
 
 /* Разметка страницы каталога */
@@ -723,6 +778,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
 a.hotel-name {
