@@ -33,15 +33,15 @@
           <h2>Инфраструктура:</h2>
           <ul>
             <li>
-              <input type="checkbox" name="pool" id="pool" checked>
+              <input class="visually-hidden" type="checkbox" name="pool" id="pool" checked>
               <label for="pool">Бассейн</label>
             </li>
             <li>
-              <input type="checkbox" name="parking" id="parking">
+              <input class="visually-hidden" type="checkbox" name="parking" id="parking">
               <label for="parking">Парковка</label>
             </li>
             <li>
-              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
               <label for="wi-fi">Wi-Fi</label>
             </li>
           </ul>
@@ -51,15 +51,15 @@
           <h2>Тип жилья:</h2>
           <ul>
             <li>
-              <input type="checkbox" name="hotel" id="hotel" checked>
+              <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">Гостиница</label>
             </li>
             <li>
-              <input type="checkbox" name="motel" id="motel" checked>
+              <input class="visually-hidden" type="checkbox" name="motel" id="motel" checked>
               <label for="motel">Мотель</label>
             </li>
             <li>
-              <input type="checkbox" name="apartment" id="apartment" checked>
+              <input class="visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
               <label for="apartment">Апартаменты</label>
             </li>
           </ul>
@@ -90,16 +90,16 @@
 
     <section class="text-founded">
       <div class="container">
-        <div class="catalog-text-block">
-          <div class="text-left">
+        <ul class="catalog-text-block">
+          <li class="text-left">
             <p class="left-founded">Найдено: 3</p>
             <p class="text-sort">Сортировка:</p>
             <p class="text-type text-current"><a href="#">по цене</a></p>
             <p class="text-type"><a href="#">по типу</a></p>
             <p class="text-type"><a href="#">по рейтингу</a></p>
-          </div>
-        <div class="text-right">
-        <div class="triangles">
+          </li>
+          <li class="text-right">
+            <div class="triangles">
             <a href="#" class="triangle-up">
               <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="10px" viewBox="0 0 11 10">
               <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
@@ -110,9 +110,9 @@
               <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
               </svg>
             </a>
-        </div>
-        </div>
-        </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
