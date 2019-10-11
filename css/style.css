@@ -473,7 +473,7 @@ a {
   left: 0;
   top: 100%;
   padding-top: 50px;
-
+  z-index: 1;
   display: none;
 }
 
@@ -587,6 +587,19 @@ a {
 .hotel-search button[type="submit"]:active {
   background-color: #5496BD;
   color: #94B9D2;
+}
+
+/* Карта */
+
+.map {
+  position: relative;
+}
+
+.map iframe {
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* Футер */
