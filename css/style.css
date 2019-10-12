@@ -705,6 +705,7 @@ a {
 
 .map iframe {
   border: none;
+  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
